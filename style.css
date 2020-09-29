@@ -176,17 +176,18 @@ header .header-button:hover {
 	height: 1110px;
 	height: 600px;
 	margin-bottom: 70px;
+	overflow: hidden;
 }
 .section-one-h1 {
 	position: relative;
-	bottom: 360px;
+	bottom: 460px;
 	background: white;
 	width: 445px;
 	height: 357px;
 }
 .section-one-button {
 	position: relative;
-	bottom: 412px;
+	bottom: 552px;
 }
 
 .section-two {
@@ -263,9 +264,15 @@ footer .footer-icons {
 	display: flex;
 	flex-direction: row-reverse;
 }
+.right img {
+	margin-left: 10px;
+}
 .left {
 	display: flex;
 	flex-direction: row;
+}
+.left img {
+	margin-right: 10px;
 }
 /* detail css*/
 .main-project-view {
@@ -336,18 +343,35 @@ footer .footer-icons {
 .pp-right p {
 	display: block;
 	position: relative;
+}
+.manage-pp-right p {
 	bottom: -40px;
 	right: 60px;
 }
+.x-pp-right p {
+	bottom: 0px;
+	right: -560px;
+}
+.x-pp-right h3 {
+	position: relative;
+	bottom: 0px;
+	left: 560px;
+}
+
 .np-left {
 	width: 500px;
+
 	height: 70px;
 	margin-right: -300px;
+}
+.insure-pp-right p {
+	bottom: -40px;
+	right: 140px;
 }
 .np-left p {
 	display: block;
 	position: relative;
-	bottom: -15px;
+	bottom: -5px;
 	right: 0px;
 }
 .previous-project svg {
@@ -369,6 +393,22 @@ footer .footer-icons {
 	margin-top: 20px;
 	margin-left: 20px;
 }
+.next-project svg {
+	position: relative;
+	margin-top: 20px;
+	right: 60px;
+}
+.next-project p {
+	position: relative;
+
+	right: 60px;
+}
+.next-project h3 {
+	position: relative;
+
+	right: 60px;
+}
+
 /*contact page*/
 .contact-one {
 	display: flex;
@@ -403,12 +443,24 @@ footer .footer-icons {
 	height: 375px;
 	width: 667px;
 }
+.form button {
+	padding: 0;
+	width: 200px;
+	height: 50px;
+	border: 0;
+	background-color: var(--color-two);
+}
+.form button .button-text {
+	height: 50px;
+}
+
 @media (max-width: 768px) {
 	header > div {
 		width: 689px;
 	}
 	.section-one {
 		margin-left: 2vw;
+		height: 470px;
 	}
 	.section-one img {
 		display: block;
@@ -418,15 +470,15 @@ footer .footer-icons {
 		padding-left: 688px;
 	}
 	.section-one img {
-		background: url(images/homepage/tablet/image-homepage-hero.jpg) no-repeat;
+		background: url(images/homepage/tablet/main.jpg) no-repeat;
 	}
 	.section-one h1 {
 		width: 514px;
 		height: 278px;
-		bottom: 260px;
+		bottom: 400px;
 	}
 	.section-one-button {
-		bottom: 312px;
+		bottom: 472px;
 	}
 	.section-two {
 		width: 689px;
@@ -470,6 +522,7 @@ footer .footer-icons {
 		height: 418px;
 	}
 	.section-portfolio img {
+		margin-right: 10px;
 		display: block;
 		box-sizing: border-box;
 		width: 339px;
@@ -478,16 +531,16 @@ footer .footer-icons {
 	}
 
 	.section-portfolio:nth-child(1) img {
-		background: url(images/portfolio/tablet/image-portfolio-manage.jpg) no-repeat;
+		background: url(images/portfolio/tablet/poliwrocket-tablet.png) no-repeat;
 	}
 	.section-portfolio:nth-child(2) img {
-		background: url(images/portfolio/tablet/image-portfolio-bookmark.jpg) no-repeat;
+		background: url(images/portfolio/tablet/calculator-tablet.png) no-repeat;
 	}
 	.section-portfolio:nth-child(3) img {
-		background: url(images/portfolio/tablet/image-portfolio-insure.jpg) no-repeat;
+		background: url(images/portfolio/tablet/library-tablet.png) no-repeat;
 	}
 	.section-portfolio:nth-child(4) img {
-		background: url(images/portfolio/tablet/image-portfolio-fylo.jpg) no-repeat;
+		background: url(images/portfolio/tablet/rock-paper-scissors-tablet.png) no-repeat;
 	}
 	/*detail css*/
 	.main-project-view {
@@ -503,13 +556,13 @@ footer .footer-icons {
 		padding-left: 639px;
 	}
 	.manage-main-project-view img {
-		background: url(images/detail/tablet/image-manage-hero.jpg) no-repeat;
+		background: url(images/detail/tablet/calculator-detail-main.png) no-repeat;
 	}
 	.bookmark-main-project-view img {
 		background: url(images/detail/tablet/image-bookmark-hero.jpg) no-repeat;
 	}
 	.insure-main-project-view img {
-		background: url(images/detail/tablet/image-insure-hero.jpg) no-repeat;
+		background: url(images/detail/tablet/poliwrocket-detail-main.png) no-repeat;
 	}
 	.fylo-main-project-view img {
 		background: url(images/detail/tablet/image-fylo-hero.jpg) no-repeat;
@@ -538,11 +591,12 @@ footer .footer-icons {
 	}
 
 	.manage-static-previews img:nth-child(2) {
-		background: url(images/detail/tablet/image-manage-preview-1.jpg) no-repeat;
+		background: url(images/detail/tablet/calculator-detail.png) no-repeat;
+		height: 780px;
 	}
-	.manage-static-previews img:nth-child(3) {
-		background: url(images/detail/tablet/image-manage-preview-2.jpg) no-repeat;
-	}
+	/* .manage-static-previews img:nth-child(3) {
+		background: url(images/detail/tablet/poliwrocket-detail-2.png) no-repeat;
+	} */
 	.bookmark-static-previews img:nth-child(2) {
 		background: url(images/detail/tablet/image-bookmark-preview-1.jpg) no-repeat;
 	}
@@ -550,10 +604,10 @@ footer .footer-icons {
 		background: url(images/detail/tablet/image-bookmark-preview-2.jpg) no-repeat;
 	}
 	.insure-static-previews img:nth-child(2) {
-		background: url(images/detail/tablet/image-insure-preview-1.jpg) no-repeat;
+		background: url(images/detail/tablet/poliwrocket-detail-1.png) no-repeat;
 	}
 	.insure-static-previews img:nth-child(3) {
-		background: url(images/detail/tablet/image-insure-preview-2.jpg) no-repeat;
+		background: url(images/detail/tablet/poliwrocket-detail-2.png) no-repeat;
 	}
 	.fylo-static-previews img:nth-child(2) {
 		background: url(images/detail/tablet/image-fylo-preview-1.jpg) no-repeat;
@@ -562,8 +616,8 @@ footer .footer-icons {
 		background: url(images/detail/tablet/image-fylo-preview-2.jpg) no-repeat;
 	}
 	.change-project {
-		width: 768px;
 		margin-left: 2vw;
+		width: 768px;
 	}
 	.previous-project {
 		width: 384px;
@@ -572,6 +626,23 @@ footer .footer-icons {
 		padding-left: 150px;
 		width: 384px;
 	}
+	.pp-right {
+		margin-left: 30px;
+	}
+	.next-project svg {
+		position: relative;
+		margin-top: 20px;
+		right: 100px;
+	}
+	.x-pp-right p {
+		bottom: -15px;
+		right: -10px;
+	}
+	.x-pp-right h3 {
+		bottom: 0px;
+		left: 10px;
+	}
+
 	/*contact css*/
 	.contact-one {
 		flex-direction: column;
@@ -608,6 +679,15 @@ footer .footer-icons {
 	.form-label {
 		color: white;
 	}
+	.form button {
+		width: 760px;
+	}
+
+	.form button .button-text {
+		padding-left: 20px;
+		width: 760px;
+		justify-content: left;
+	}
 }
 @media (max-widtH: 375px) {
 	header > div {
@@ -620,32 +700,34 @@ footer .footer-icons {
 		display: none;
 	}
 	.section-one {
+		height: 700px;
 		margin-left: 2vw;
 	}
 	.section-one img {
 		display: block;
 		box-sizing: border-box;
 		width: 311px;
-		height: 271px;
+		height: 221px;
 		padding-left: 311px;
 	}
 	.section-one img {
-		background: url(images/homepage/mobile/image-homepage-hero.jpg) no-repeat;
+		background: url(images/homepage/mobile/main.jpg) no-repeat;
 	}
 	.section-one h1 {
 		width: 311px;
-		height: 168px;
+		height: 268px;
 		bottom: -20px;
+		font-size: 45px;
 		text-align: center;
 	}
 	.section-one-button {
-		bottom: -120px;
+		bottom: -150px;
 		left: 50px;
 	}
 	.section-two {
 		flex-direction: column;
 		width: 311px;
-		height: 995px;
+		height: 805px;
 		margin-left: -22vw;
 	}
 	.section-two img {
@@ -728,16 +810,16 @@ footer .footer-icons {
 	}
 
 	.section-portfolio:nth-child(1) img {
-		background: url(images/portfolio/mobile/image-portfolio-manage.jpg) no-repeat;
+		background: url(images/portfolio/mobile/poliwrocket-mobile.png) no-repeat;
 	}
 	.section-portfolio:nth-child(2) img {
-		background: url(images/portfolio/mobile/image-portfolio-bookmark.jpg) no-repeat;
+		background: url(images/portfolio/mobile/calculator-mobile.png) no-repeat;
 	}
 	.section-portfolio:nth-child(3) img {
-		background: url(images/portfolio/mobile/image-portfolio-insure.jpg) no-repeat;
+		background: url(images/portfolio/mobile/library-mobile.png) no-repeat;
 	}
 	.section-portfolio:nth-child(4) img {
-		background: url(images/portfolio/mobile/image-portfolio-fylo.jpg) no-repeat;
+		background: url(images/portfolio/mobile/rock-paper-scissors-mobile.png) no-repeat;
 	}
 
 	/*detail css*/
@@ -754,13 +836,13 @@ footer .footer-icons {
 		padding-left: 311px;
 	}
 	.manage-main-project-view img {
-		background: url(images/detail/mobile/image-manage-hero.jpg) no-repeat;
+		background: url(images/detail/mobile/calculator-detail-main.png) no-repeat;
 	}
 	.bookmark-main-project-view img {
 		background: url(images/detail/mobile/image-bookmark-hero.jpg) no-repeat;
 	}
 	.insure-main-project-view img {
-		background: url(images/detail/mobile/image-insure-hero.jpg) no-repeat;
+		background: url(images/detail/mobile/poliwrocket-detail-main.png) no-repeat;
 	}
 	.fylo-main-project-view img {
 		background: url(images/detail/mobile/image-fylo-hero.jpg) no-repeat;
@@ -791,11 +873,11 @@ footer .footer-icons {
 	}
 
 	.manage-static-previews img:nth-child(2) {
-		background: url(images/detail/mobile/image-manage-preview-1.jpg) no-repeat;
+		background: url(images/detail/mobile/calculator-detail.png) no-repeat;
 	}
-	.manage-static-previews img:nth-child(3) {
-		background: url(images/detail/mobile/image-manage-preview-2.jpg) no-repeat;
-	}
+	/* .manage-static-previews img:nth-child(3) {
+		background: url(images/detail/mobile/poliwrocket-detail-2.png) no-repeat;
+	} */
 	.bookmark-static-previews img:nth-child(2) {
 		background: url(images/detail/mobile/image-bookmark-preview-1.jpg) no-repeat;
 	}
@@ -803,10 +885,10 @@ footer .footer-icons {
 		background: url(images/detail/mobile/image-bookmark-preview-2.jpg) no-repeat;
 	}
 	.insure-static-previews img:nth-child(2) {
-		background: url(images/detail/mobile/image-insure-preview-1.jpg) no-repeat;
+		background: url(images/detail/mobile/poliwrocket-detail-1.png) no-repeat;
 	}
 	.insure-static-previews img:nth-child(3) {
-		background: url(images/detail/mobile/image-insure-preview-2.jpg) no-repeat;
+		background: url(images/detail/mobile/poliwrocket-detail-2.png) no-repeat;
 	}
 	.fylo-static-previews img:nth-child(2) {
 		background: url(images/detail/mobile/image-fylo-preview-1.jpg) no-repeat;
@@ -815,18 +897,69 @@ footer .footer-icons {
 		background: url(images/detail/mobile/image-fylo-preview-2.jpg) no-repeat;
 	}
 	.change-project {
-		width: 375px;
-		margin-left: 0vw;
+		width: 311px;
+		position: relative;
+		right: 30px;
 	}
 	.change-project h3 {
 		font-size: 20px;
 	}
 	.previous-project {
-		width: 175px;
+		width: 155px;
+	}
+	.previous-project p {
+		font-size: 10px;
+		width: 155px;
+		position: relative;
+	}
+	.previous-project h3 {
+		position: relative;
+		right: -20px;
+	}
+	.previous-project svg {
+		position: relative;
+		right: -30px;
 	}
 	.next-project {
 		padding-left: 20px;
 		width: 175px;
+	}
+	.next-project svg {
+		position: relative;
+		right: 30px;
+	}
+	.next-project p {
+		font-size: 10px;
+		position: relative;
+		top: 0px;
+		right: 0px;
+	}
+	.next-project h3 {
+		position: relative;
+		right: 00px;
+	}
+
+	.insure-pp-right p {
+		bottom: -40px;
+		right: 65px;
+	}
+	.x-pp-right p {
+		bottom: 0;
+		right: -45px;
+	}
+	.x-pp-right h3 {
+		position: relative;
+		left: 45px;
+	}
+	.x svg {
+		display: block;
+		position: absolute;
+	}
+	.x svg:nth-child(1) {
+		right: 285px;
+	}
+	.manage-pp-right p {
+		right: 20px;
 	}
 	/*contact css*/
 
